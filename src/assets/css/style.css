@@ -1,10 +1,3 @@
-/**
-* Template Name: iPortfolio - v2.0.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,9 +6,11 @@ body {
   color: #272829;
 }
 
+/*
 .btn {
   margin-left: 70%;
 }
+*/
 
 a {
   color: #149ddd;
@@ -30,6 +25,125 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+
+
+/*--------------------------------------------------------------
+# How Caroucel
+--------------------------------------------------------------*/
+.boxproductos
+{
+background:#fff;
+padding: 10px;
+margin: 5px;
+width: 250px;
+height:490px;
+}
+.boxproductos img
+{
+  width: 210px;
+  height: 300px;
+}
+.boxproductos a
+{
+  display: block;
+  text-align: center;
+  padding: 7px;
+  color:#5a3b72;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+a.precio{
+  color:#cd5926;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.icn_comprar
+{
+  display: block;
+
+}
+.icn_comprar a {
+ display:inline-block !important;
+ margin: 5px;
+ font-size: 2.2em;
+ width: 105px;
+ text-align: center;
+}
+.icn_comprar #addcart{
+  color: #88b656;
+}
+.icn_comprar #addwish{
+  color: #4f4c52;
+}
+
+/*--------------------------------------------------------------
+# END CAROUSEL
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Sections - Perfil
+--------------------------------------------------------------*/
+ #perfil{
+   height: 100%;
+ }
+
+ .card {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+/*--------------------------------------------------------------
+# Sections - Carrito
+--------------------------------------------------------------*/
+
+.heigt-carrito{
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}
+
+.gutters-sm {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.mb-3, .my-3 {
+  margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+  background-color: #e2e8f0;
+}
+.h-100 {
+  height: 100%!important;
+}
+.shadow-none {
+  box-shadow: none!important;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Back to top button

@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { XboxComponent } from './components/sections/xbox/xbox.component';
 import { PlayStationComponent } from './components/sections/play-station/play-station.component';
 import { PCComponent } from './components/sections/pc/pc.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JwtModule } from "@auth0/angular-jwt";
 
 import { FormsModule } from '@angular/forms';
@@ -20,6 +20,11 @@ import { PerfilComponent } from './components/sections/perfil/perfil.component';
 import { CarouselComponent } from './pages/componentes/carousel/carousel.component';
 import { PcComponent } from './pages/componentes/pc/pc.component';
 import { ComponentesComponent } from './pages/componentes/componentes.component';
+import { CarritoComponent } from './components/sections/carrito/carrito.component';
+import { FavoritosComponent } from './components/sections/favoritos/favoritos.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 export function tokenGetter() {
   return localStorage.getItem("jwt");
@@ -37,7 +42,9 @@ export function tokenGetter() {
     PerfilComponent,
     CarouselComponent,
     PcComponent,
-    ComponentesComponent
+    ComponentesComponent,
+    CarritoComponent,
+    FavoritosComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +52,8 @@ export function tokenGetter() {
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    BrowserAnimationsModule,
+    CarouselModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent }
     ]),

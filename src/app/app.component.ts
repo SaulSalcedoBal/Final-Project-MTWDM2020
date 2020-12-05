@@ -19,6 +19,13 @@ export class AppComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
 
+
+  isuseradminitrator(){
+    false
+
+    true
+  }
+
   isUserAuthenticated() {
     const token: string = localStorage.getItem("jwt");
     const isExpired = helper.isTokenExpired(token);
