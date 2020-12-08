@@ -1,46 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
-import { XboxComponent } from './xbox/xbox.component';
+import { ComponentesComponent } from './componentes.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { PcComponent } from './pc/pc.component';
-import { PlayComponent } from './play/play.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { CarritoComponent } from './carrito/carrito.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
+import { DetalleComponent } from './detalle/detalle.component';
+
 
 
 
 const routes : Routes = [
     {
-     /*   path: '',
+        path: '',
         component: ComponentesComponent,
         children: [
             {
-                path: 'buttons', component: BotonesComponent
+                path: 'carrito', component: CarritoComponent
             },
             {
-                path: 'cards', component: TarjetasComponent
-            },
-            {
-                path: 'busqueda', component: BusquedaComponent
-            },
-            {
-                path: 'cancelacion', component: CancelacionComponent
-            },
-            {
-                path: 'cerrar', component: CerrarComponent
-            },
-            {
-                path: 'configuraciones', component: ConfiguracionesComponent
+                path: 'favoritos', component: FavoritosComponent
             },
             {
                 path: 'perfil', component: PerfilComponent
             },
             {
-                path: 'registro', component: RegistroComponent
-            },
-            {
-                path: 'paises', component: PaisesComponent
+                path: 'detalle', component: DetalleComponent
             }
         ]
-        */
+        
     }
 
 ];

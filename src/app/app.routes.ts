@@ -12,6 +12,7 @@ const routes: Routes = [
     { path: 'codigos', loadChildren: () => import('./pages/codigos/codigos.module').then(module => module.CodigosModule) },
     { path: 'clientes', loadChildren: () => import('./pages/clientes/clientes.module').then(module => module.ClientesModule) },
     { path: 'ventas', loadChildren: () => import('./pages/ventas/ventas.module').then(module => module.VentasModule) },
+    { path: 'componentes', loadChildren: () => import('./pages/componentes/componentes.module').then(module => module.ComponentesModule)},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: PageNotFoundComponent },
 ];

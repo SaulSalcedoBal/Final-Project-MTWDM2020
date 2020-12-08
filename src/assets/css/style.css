@@ -244,7 +244,6 @@ a.precio{
 }
 
 #main-carousel {
-  margin-left: 300px;
   height: auto;
   background: linear-gradient(to bottom right, rgb(65, 26, 117), rgb(92, 87, 87));
   padding-bottom: 2em;

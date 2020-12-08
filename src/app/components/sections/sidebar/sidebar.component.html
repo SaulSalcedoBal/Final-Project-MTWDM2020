@@ -21,13 +21,14 @@
                 <li><a href="#playstation"><i class="icon-Contenedor-PS"></i> <span>Play Station</span></a></li>
                 <!-- <li><a href="#pc"><i class="bx bx-book-content"></i>PC</a></li><br> -->
                 <li><a href="#pc"><i class="icon-Contenedor-PC"></i>PC</a></li>
-                <li><a href="#nintendo"><i class="icon-Contenedor-Nintendo"></i>Nintendo</a></li>
-                <br>
-                <li *ngIf="isUserAuthenticated()"><a href="#perfil"><i class="bx bx-book-content"></i>Mi Perfil</a></li>
+                <!--<li><a href="#nintendo"><i class="icon-Contenedor-Nintendo"></i>Nintendo</a></li>-->
+                <li><a routerLink="componentes/carrito"><i class="bx bx-cart"></i>Carrito</a></li>
+                <li *ngIf="isUserAuthenticated()"><a routerLink="componentes/perfil" routerLinkActive="active"><i class="bx bx-book-content"></i>Mi Perfil</a></li>
+                <li *ngIf="isUserAuthenticated()"><a routerLink="componentes/favoritos" routerLinkActive="active"><i class="bx bx-book-content"></i>Mis Favoritos</a></li>
                 <br>
                 <button class="btn btn-primary w3-red" type="submit" value="Submit" *ngIf="isUserAuthenticated()"
                     style="width: 85%;">
-                    <li class="logout" (click)="logOut()">Logout</li>
+                    <li class="logout" (click)="logOut()" routerLink="home">Logout</li>
                 </button>
 
                 <li><button type="button" class="btn btn-primary w3-red" (click)="open(mymodal)" style="width: 85%;"

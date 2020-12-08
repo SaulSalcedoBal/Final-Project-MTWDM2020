@@ -4,7 +4,6 @@ import { AuthGuard } from './guards/auth-guard.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -16,15 +15,10 @@ import { JwtModule } from "@auth0/angular-jwt";
 
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './components/sections/sidebar/sidebar.component';
-import { PerfilComponent } from './components/sections/perfil/perfil.component';
-import { CarouselComponent } from './pages/componentes/carousel/carousel.component';
-import { PcComponent } from './pages/componentes/pc/pc.component';
-import { ComponentesComponent } from './pages/componentes/componentes.component';
-import { CarritoComponent } from './components/sections/carrito/carrito.component';
-import { FavoritosComponent } from './components/sections/favoritos/favoritos.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AppRouterModule } from './app.routes';
 
 export function tokenGetter() {
   return localStorage.getItem("jwt");
@@ -38,25 +32,16 @@ export function tokenGetter() {
     XboxComponent,
     PlayStationComponent,
     PCComponent,
-    SidebarComponent,
-    PerfilComponent,
-    CarouselComponent,
-    PcComponent,
-    ComponentesComponent,
-    CarritoComponent,
-    FavoritosComponent
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
+    AppRouterModule,
     HttpClientModule,
     NgbModule,
     BrowserAnimationsModule,
     CarouselModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent }
-    ]),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
