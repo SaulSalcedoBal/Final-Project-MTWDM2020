@@ -19,6 +19,7 @@ import { SidebarComponent } from './components/sections/sidebar/sidebar.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRouterModule } from './app.routes';
+import { FooterComponent } from './components/sections/footer/footer.component';
 
 export function tokenGetter() {
   return localStorage.getItem("jwt");
@@ -32,7 +33,8 @@ export function tokenGetter() {
     XboxComponent,
     PlayStationComponent,
     PCComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { DetalleComponent } from './detalle/detalle.component';
+import { AllgamesComponent } from './allgames/allgames.component';
 
 
 
@@ -26,6 +27,9 @@ const routes : Routes = [
             },
             {
                 path: 'detalle', component: DetalleComponent
+            },
+            {
+                path: 'allgames', component: AllgamesComponent
             }
         ]
         

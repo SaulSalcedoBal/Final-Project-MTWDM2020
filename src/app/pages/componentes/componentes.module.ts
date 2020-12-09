@@ -9,11 +9,12 @@ import { ComponentesRouterModule } from './componentes.routes';
 import { FormsModule } from '@angular/forms';
 import { DetalleComponent } from './detalle/detalle.component';
 import { AllgamesComponent } from './allgames/allgames.component';
+import { TopbarComponent } from '../../components/sections/topbar/topbar.component';
 
 
 
 @NgModule({
-  declarations: [ComponentesComponent, CarouselComponent, PerfilComponent, CarritoComponent, FavoritosComponent, DetalleComponent, AllgamesComponent],
+  declarations: [ComponentesComponent, CarouselComponent, PerfilComponent, CarritoComponent, FavoritosComponent, DetalleComponent, AllgamesComponent, TopbarComponent],
   imports: [
     CommonModule,
     ComponentesRouterModule,
